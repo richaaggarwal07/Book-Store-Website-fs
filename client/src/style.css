@@ -1,0 +1,48 @@
+img{
+    height: 250px;
+    width: 170px;
+}
+
+.search{
+    display: flex;
+    justify-content: space-between;
+    margin: 8px;
+    top: 0;
+    position: sticky;
+    background: rgb(255, 255, 255);
+    /* width: 100%; */
+
+}
+.list{
+    top: 0px;
+    position: sticky; 
+}
+th{
+    top: 22px;
+    position: sticky;
+    background: #e5d2f1;
+    height: 30px;
+}
+#search_data{
+    display: none;
+}
+
+td{
+    padding: 0 15px;
+}
+
+a{
+    background: rgb(220, 181, 181);
+}
+
+#tb2 th{
+    top: 0px;
+    position: sticky;
+    background: #e5d2f1;
+    height: 30px;
+    /* border: 2px solid; */
+}
+
+table{
+    border-spacing: 0 15px;
+}

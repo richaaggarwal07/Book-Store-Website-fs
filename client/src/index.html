@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="search">
+
+        <div class="searchAll">
+            <input type="text" placeholder="search " id="data">
+            <input type="submit" value="search" onclick="searchAll()" >
+        </div>
+
+        
+
+        <div class="genresDropdown">
+            <label for="cars">Choose a Genre:</label>
+
+        <select name="genre" id="genre">
+            <option value="Young Adult">Young Adult</option>
+            <option value="Fiction">Fiction</option>
+            <option value="Dystopia">Dystopia</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Romance">Romance</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Teen">Teen</option>
+            <option value="Post Apocalyptic">Post Apocalyptic</option>
+            <option value="Action">Action</option>
+            <option value="Magic">Magic</option>
+            <option value="Audiobook">Audiobook</option>
+            <option value="Middle Grade">Middle Grade</option>
+            <option value="Classics">Classics</option>
+            <option value="Literature">Literature</option>
+            <option value="Historical">Historical</option>
+            <option value="Novels">Novels</option>
+            <option value="High School">High School</option>
+            <option value="Supernatural">Supernatural</option>
+            <option value="Middle Grade">Middle Grade</option>
+            <option value="Adult">Adult</option>
+            <option value="Suspense">Suspense</option>
+            <option value="Thriller">Thriller</option>
+        </select>
+        <input type="submit" value="search" onclick="search()" >
+        </div>
+        
+
+        <div class="list">
+            <a href="./wishlist.html" >Your Wishlist</a>
+        </div>
+    </div>
+
+    
+
+
+    <table id="tb" width="100%">
+
+        <tr>
+            <th>CoverImg</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Rating</th>
+            <th>Description</th>
+            <th>Genres</th>
+            <th>Price in $</th>
+            <th>Add to favourite</th>
+        </tr>
+    </table>
+
+    <!-- <input id = "input"> -->
+    <!-- <button onclick="getbooks()">get books..</button>
+    <br> -->
+
+
+    <div id="output"></div>
+
+    <button id="paginated_data" onclick=getMoreData()>More Data</button>
+    <button id="search_data" onclick=getMoreSerachData()>More Search Results</button>
+    <script src="index.js"></script>
+</body>
+
+</html>
