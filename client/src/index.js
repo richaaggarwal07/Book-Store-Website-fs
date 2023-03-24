@@ -194,6 +194,7 @@ addToWishlist(obj,btn) {
   });
   console.log("before button got disabled..")
   btn.disabled = true;
+  alert("Book Added to Wishlist...");
 }
 
 
