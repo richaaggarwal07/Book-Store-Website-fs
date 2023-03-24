@@ -34,9 +34,20 @@ function createwishlistRows(obj) {
          description.innerHTML = obj[i].description;
          table_header_row.appendChild(description);
 
-         let genres = document.createElement("td");
-         genres.innerHTML = obj[i].genres.substring(1,obj[i].genres.length-1);
-         table_header_row.appendChild(genres);
+        //  let genres = document.createElement("td");
+        //  genres.innerHTML = obj[i].genres.substring(1,obj[i].genres.length-1);
+        //  table_header_row.appendChild(genres);
+
+        let generes=obj[i].genres.substring(1, obj[i].genres.length - 1);
+        let genrespointer = document.createElement("td");
+        let g = "";
+        for(let x of generes){
+        if(x != "'"){
+            g += x;
+        }
+        }
+    genrespointer.innerHTML = g;
+    table_header_row.appendChild(genrespointer);
 
          let price = document.createElement("td");
          if(obj[i].price){
