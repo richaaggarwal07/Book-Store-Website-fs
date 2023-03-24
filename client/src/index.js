@@ -1,7 +1,7 @@
 let page = 1;
 let limit = 20;
 function makeRequest() {
-  const url = `http://localhost:3000/?page=${page}&limit=${limit}`;
+  const url = `https://book-store-fs.richa-aggarwal.repl.co/?page=${page}&limit=${limit}`;
   page += 1;
   fetch(url)
     .then((res) => res.json())
@@ -14,7 +14,7 @@ let p = 1;
 let l = 20;
 async function searchPagination(searchVal) {
   // let searchVal = document.getElementById('data').value.toLowerCase();
-  const url = `http://localhost:3000/searchPagination?page=${p}&limit=${l}&searchVal=${searchVal}`;
+  const url = `https://book-store-fs.richa-aggarwal.repl.co/searchPagination?page=${p}&limit=${l}&searchVal=${searchVal}`;
   // for()
   p += 1;
   // let rorwsdata = document.getElementById('tb');
@@ -169,7 +169,7 @@ addToWishlist(obj,btn) {
   // console.log(btn);
   // console.log(obj);
 
-  await fetch(`http://localhost:3000/wishlistdata`, {
+  await fetch(`https://book-store-fs.richa-aggarwal.repl.co/wishlistdata`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

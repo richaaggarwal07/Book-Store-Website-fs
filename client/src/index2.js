@@ -73,7 +73,7 @@ function createwishlistRows(obj) {
 
  async function getWishlistData()
  {
-    const url =await fetch(`http://localhost:3000/wishlistdata`);
+    const url =await fetch(`https://book-store-fs.richa-aggarwal.repl.co/wishlistdata`);
     let data=await url.json()
     console.log("here in getwishlist()",data);
     createwishlistRows(data);
@@ -85,7 +85,7 @@ getWishlistData();
 function removewishlist(bookId){
     console.log("Delete Task")
     console.log(bookId);
-    fetch(`http://localhost:3000/wishlistdata/${bookId}`, {
+    fetch(`https://book-store-fs.richa-aggarwal.repl.co/wishlistdata/${bookId}`, {
     method: 'DELETE',
     });
     console.log("calling getWishlistData func");
